@@ -1,0 +1,38 @@
+#inicial {
+    border: 1px solid #cfcfcf;
+    box-shadow: 1px 1px 5px 2px gray;
+    margin: 20px;
+}
+
+#lateral{
+    text-align: center;
+    margin-top: 15%;
+    float: left;
+}
+
+#lateral h1 {
+    font-size: 80px;
+    font-family: sans-serif;
+}
+
+#lateral p {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#login{
+    text-align: center;
+    padding: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 150px;
+    margin-bottom: 140px;
+    margin-right: 15%;
+    border: 1px solid #D3D3D3;
+    box-shadow: 1px 1px 5px 1px #D3D3D3;
+    float: right;
+}
+
+#login input{
+    width: 100%;
+}

@@ -1,0 +1,28 @@
+.row{
+    border: 1px solid #cfcfcf;
+    box-shadow: 1px 1px 5px 2px gray;
+    margin: 20px !important;
+}
+
+#editar-categoria{
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+#editar-categoria h1{
+    margin-bottom: 20px;
+    font-family: revert;
+    font-size: 45px;
+}
+
+form{
+    text-align: center;
+}
+
+.col-md-6{
+    margin-left: 25%;
+}
+
+body{
+    background-color: whitesmoke !important;
+}

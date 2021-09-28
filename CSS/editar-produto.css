@@ -1,0 +1,31 @@
+.row{
+    border: 1px solid #cfcfcf;
+    box-shadow: 1px 1px 5px 2px gray;
+    margin: 20px !important;
+}
+
+#editar-produto{
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 110px;
+}
+#editar-produto h1{
+    margin-bottom: 20px;
+    font-family: revert;
+    font-size: 45px;
+}
+
+form{
+    text-align: center;
+}
+
+.col-md-6{
+    margin-left: 25%;
+}
+
+body{
+    background-color: whitesmoke !important;
+}
+#descricao{
+    height: 200px;
+}

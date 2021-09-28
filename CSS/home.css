@@ -1,0 +1,17 @@
+#menu{
+    background-color: currentColor;
+    text-align: center;
+    padding-bottom: 430px;
+}
+
+#menu h1{
+    color: lightgray;
+    padding: 10px;
+    font-family: serif;
+    font-size: xxx-large;
+
+}
+
+#corpo{
+    background-color: lightgrey;
+}
