@@ -24,7 +24,7 @@
 
 #btn-add-produto{
     margin-top: 30px;
-    padding-right: 55px;
+    padding-right: 45px;
     text-align: end;
 }
 
@@ -56,10 +56,46 @@ table td{
 }
 
 .td-preco{
-    width: 150px;
+    width: auto;
 }
 
 .td-acoes{
-    width: auto;
+    width: 170px;
     text-align: center;
+}
+
+.btn-light{
+    font-size: 80px !important;
+    color: lightgray !important;
+    padding: 1% !important;
+}
+
+.col-md-2{
+    border: 1px solid lightgray;
+    width: 135px;
+    height: 135px;
+    background-color: #f8f9fa;
+    margin: 10px;
+}
+.foto{
+    display: flex;
+    align-items: center;
+}
+
+.foto:hover{
+    opacity: 50%;
+}
+
+.opcoes{
+    position: absolute;
+    opacity: 0;
+    margin: -11px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.opcoes:hover{
+    opacity: 80%;
+    background-color: whitesmoke;
 }

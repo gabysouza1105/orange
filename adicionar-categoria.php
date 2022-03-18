@@ -13,7 +13,7 @@ if (!isset($_SESSION['logado'])) {
 <div class="row">
     <div class="col-md-12" id="adicionar-categoria">
         <h1>Adicionar Categoria</h1>
-        <form action="App/Adicionar.php" method="post">
+        <form action="App/Categorias.php" method="post">
             <div class="col-md-6 form-floating mb-4">
                 <input type="text" class="form-control" name="categoria" placeholder="Categoria">
                 <label>Categoria</label>
@@ -24,3 +24,7 @@ if (!isset($_SESSION['logado'])) {
         </form>
     </div>
 </div>
+
+<?php
+include_once 'bottom.php';
+?>

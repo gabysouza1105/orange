@@ -18,6 +18,7 @@ if (!isset($_SESSION['logado'])) {
             <a href="home.php" role="button" class="btn btn-dark">Home</a>
             <a href="produtos.php" role="button" class="btn btn-dark">Produtos</a>
             <a href="categorias.php" role="button" class="btn btn-dark">Categorias</a>
+            <a href="usuarios.php" role="button" class="btn btn-dark">Usuarios</a>
         </div>
     </div>
     <div class="col-md-9" id="corpo">

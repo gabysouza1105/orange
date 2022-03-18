@@ -19,6 +19,7 @@ if (!isset($_SESSION['logado'])) {
             <a href="home.php" role="button" class="btn btn-dark">Home</a>
             <a href="produtos.php" role="button" class="btn btn-dark">Produtos</a>
             <a href="categorias.php" role="button" class="btn btn-dark">Categorias</a>
+            <a href="usuarios.php" role="button" class="btn btn-dark">Usuarios</a>
         </div>
     </div>
     <div class="col-md-9" id="corpo">
@@ -41,9 +42,7 @@ if (!isset($_SESSION['logado'])) {
             <tbody>
             <?php
             $categorias = new App\Categorias();
-            $categorias->categoria();
-            foreach ($categorias->categoria() as $categoria) {
-                //if ($categoria['ativo'] == 1) {
+            foreach ($categorias->display() as $categoria) {
                     ?>
                     <tr>
                         <td class="td-categoria"><?php echo $categoria['nome'];
@@ -51,11 +50,11 @@ if (!isset($_SESSION['logado'])) {
                         <td class="td-acoes">
                             <a href="editar-categoria.php?id=<?php echo $categoria["id"]?>" class="btn btn-outline-warning" role="button"
                                id="btn-edit"><i class="bi bi-pencil"></i></a>
-                            <a href="App/Deletar.php?id=<?php echo $categoria["id"]?>" class="btn btn-outline-danger" role="button" id="btn-deletar-categoria"><i class="bi bi-trash"></i></a>
+                            <a href="App/Categorias.php?id=<?php echo $categoria["id"]?>" class="btn btn-outline-danger" role="button" id="btn-deletar-categoria"><i class="bi bi-trash"></i></a>
                         </td>
                     </tr>
-                <?php //}
-            } ?>
+                <?php }
+                ?>
             </tbody>
         </table>
     </div>

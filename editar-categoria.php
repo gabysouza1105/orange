@@ -13,10 +13,10 @@ if (!isset($_SESSION['logado'])) {
 <div class="row">
     <div class="col-md-12" id="editar-categoria">
         <h1>Editar</h1>
-        <form action="App/Editar.php" method="post">
+        <form action="App/Categorias.php" method="post">
             <?php
             $categorias = new App\Categorias();
-            $categoria = $categorias->categoria($_GET["id"])->fetch_array();
+            $categoria = $categorias->display($_GET["id"])->fetch_array();
             ?>
             <input type="hidden" name="id" value="<?php echo $categoria["id"]; ?>"/>
             <div class="col-md-6 form-floating mb-4">
@@ -29,3 +29,7 @@ if (!isset($_SESSION['logado'])) {
         </form>
     </div>
 </div>
+
+<?php
+include_once 'bottom.php';
+?>

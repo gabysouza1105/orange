@@ -16,7 +16,7 @@ class Login
                 $senha1 = mysqli_escape_string(Conexao::conn(), $senha);
                 $senha = htmlspecialchars($senha1);
 
-                $sql = "SELECT id FROM usuarios WHERE email = '$email' and senha = MD5('$senha') and admin = '1'";
+                $sql = "SELECT id FROM usuarios WHERE email = '$email' and senha = MD5('$senha')";
                 $resultado = mysqli_query(Conexao::conn(), $sql);
                 $dados = mysqli_fetch_array($resultado);
 
